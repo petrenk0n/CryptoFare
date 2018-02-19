@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		166680B6B0E77978EFC6DF4B /* Pods_CryptoFare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D17798E4C4E6EE3E55D7061 /* Pods_CryptoFare.framework */; };
 		E986862B203A53A40072ABEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986862A203A53A40072ABEE /* AppDelegate.swift */; };
 		E986862D203A53A40072ABEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986862C203A53A40072ABEE /* ViewController.swift */; };
 		E9868630203A53A40072ABEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E986862E203A53A40072ABEE /* Main.storyboard */; };
 		E9868632203A53A40072ABEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9868631203A53A40072ABEE /* Assets.xcassets */; };
 		E9868635203A53A40072ABEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9868633203A53A40072ABEE /* LaunchScreen.storyboard */; };
+		E9E66668203B647A0072D686 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E66667203B647A0072D686 /* Currency.swift */; };
+		E9E66679203B694A0072D686 /* MyCustomPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E66677203B694A0072D686 /* MyCustomPriceCell.swift */; };
+		E9E6667A203B694A0072D686 /* CustomPriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E66678203B694A0072D686 /* CustomPriceCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B82D27C581F7EBA4FE65D75 /* Pods-CryptoFare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoFare.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoFare/Pods-CryptoFare.release.xcconfig"; sourceTree = "<group>"; };
+		7D17798E4C4E6EE3E55D7061 /* Pods_CryptoFare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoFare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9868627203A53A40072ABEE /* CryptoFare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoFare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E986862A203A53A40072ABEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E986862C203A53A40072ABEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		E9868631203A53A40072ABEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9868634203A53A40072ABEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9868636203A53A40072ABEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E66667203B647A0072D686 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		E9E66677203B694A0072D686 /* MyCustomPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomPriceCell.swift; sourceTree = "<group>"; };
+		E9E66678203B694A0072D686 /* CustomPriceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPriceCell.xib; sourceTree = "<group>"; };
+		F332AF778249F37AF062FE50 /* Pods-CryptoFare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoFare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoFare/Pods-CryptoFare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				166680B6B0E77978EFC6DF4B /* Pods_CryptoFare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B69B89C1BE56F0EA9016E60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F332AF778249F37AF062FE50 /* Pods-CryptoFare.debug.xcconfig */,
+				4B82D27C581F7EBA4FE65D75 /* Pods-CryptoFare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D4D617800B596EB01C63E9EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D17798E4C4E6EE3E55D7061 /* Pods_CryptoFare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E986861E203A53A40072ABEE = {
 			isa = PBXGroup;
 			children = (
 				E9868629203A53A40072ABEE /* CryptoFare */,
 				E9868628203A53A40072ABEE /* Products */,
+				7B69B89C1BE56F0EA9016E60 /* Pods */,
+				D4D617800B596EB01C63E9EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +84,49 @@
 		E9868629203A53A40072ABEE /* CryptoFare */ = {
 			isa = PBXGroup;
 			children = (
-				E986862A203A53A40072ABEE /* AppDelegate.swift */,
-				E986862C203A53A40072ABEE /* ViewController.swift */,
-				E986862E203A53A40072ABEE /* Main.storyboard */,
+				E9E66669203B64F90072D686 /* Model */,
+				E9E6666B203B65A10072D686 /* View */,
+				E9E6666A203B65820072D686 /* Controller */,
 				E9868631203A53A40072ABEE /* Assets.xcassets */,
-				E9868633203A53A40072ABEE /* LaunchScreen.storyboard */,
 				E9868636203A53A40072ABEE /* Info.plist */,
 			);
 			path = CryptoFare;
+			sourceTree = "<group>";
+		};
+		E9E66669203B64F90072D686 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9E66667203B647A0072D686 /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9E6666A203B65820072D686 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E986862A203A53A40072ABEE /* AppDelegate.swift */,
+				E986862C203A53A40072ABEE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E9E6666B203B65A10072D686 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9E6666C203B65C50072D686 /* Custom Cell */,
+				E986862E203A53A40072ABEE /* Main.storyboard */,
+				E9868633203A53A40072ABEE /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9E6666C203B65C50072D686 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E9E66677203B694A0072D686 /* MyCustomPriceCell.swift */,
+				E9E66678203B694A0072D686 /* CustomPriceCell.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9868639203A53A40072ABEE /* Build configuration list for PBXNativeTarget "CryptoFare" */;
 			buildPhases = (
+				DDEA7338DF6B1F0CBB57181A /* [CP] Check Pods Manifest.lock */,
 				E9868623203A53A40072ABEE /* Sources */,
 				E9868624203A53A40072ABEE /* Frameworks */,
 				E9868625203A53A40072ABEE /* Resources */,
+				9BFC81C451083750CB6F0A7E /* [CP] Embed Pods Frameworks */,
+				176C59D25F515E8E5C5C8E3B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +193,77 @@
 			files = (
 				E9868635203A53A40072ABEE /* LaunchScreen.storyboard in Resources */,
 				E9868632203A53A40072ABEE /* Assets.xcassets in Resources */,
+				E9E6667A203B694A0072D686 /* CustomPriceCell.xib in Resources */,
 				E9868630203A53A40072ABEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		176C59D25F515E8E5C5C8E3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoFare/Pods-CryptoFare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BFC81C451083750CB6F0A7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CryptoFare/Pods-CryptoFare-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoFare/Pods-CryptoFare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDEA7338DF6B1F0CBB57181A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoFare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9868623203A53A40072ABEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E66668203B647A0072D686 /* Currency.swift in Sources */,
 				E986862D203A53A40072ABEE /* ViewController.swift in Sources */,
+				E9E66679203B694A0072D686 /* MyCustomPriceCell.swift in Sources */,
 				E986862B203A53A40072ABEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +399,7 @@
 		};
 		E986863A203A53A40072ABEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F332AF778249F37AF062FE50 /* Pods-CryptoFare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +415,7 @@
 		};
 		E986863B203A53A40072ABEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B82D27C581F7EBA4FE65D75 /* Pods-CryptoFare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
