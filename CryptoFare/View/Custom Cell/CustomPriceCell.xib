@@ -39,17 +39,20 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EuB-fu-NBU">
-                        <rect key="frame" x="16" y="17" width="50" height="50"/>
+                        <rect key="frame" x="16" y="24" width="50" height="37"/>
                     </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="R1s-8m-OO3" firstAttribute="leading" secondItem="VJg-1M-opT" secondAttribute="trailing" constant="4" id="0s2-v8-EZ5"/>
-                    <constraint firstItem="VJg-1M-opT" firstAttribute="leading" secondItem="EuB-fu-NBU" secondAttribute="trailing" constant="60" id="6te-Bt-Trh"/>
                     <constraint firstItem="VJg-1M-opT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="21" id="Elu-lw-mRL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="EuB-fu-NBU" secondAttribute="bottom" constant="14" id="G8h-8G-Yf5"/>
                     <constraint firstItem="Suv-0L-1jE" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Igp-4h-ED9"/>
                     <constraint firstAttribute="bottomMargin" secondItem="VJg-1M-opT" secondAttribute="bottom" constant="22" id="Mfo-Ek-hvY"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Suv-0L-1jE" secondAttribute="bottom" constant="22" id="Ri0-wQ-gsN"/>
+                    <constraint firstItem="EuB-fu-NBU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="UBO-NS-z3C"/>
+                    <constraint firstItem="EuB-fu-NBU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fmK-bf-VA9"/>
                     <constraint firstItem="Suv-0L-1jE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="21" id="llQ-A2-ynq"/>
+                    <constraint firstItem="VJg-1M-opT" firstAttribute="leading" secondItem="EuB-fu-NBU" secondAttribute="trailing" constant="8" id="ooC-2H-mDS"/>
                     <constraint firstAttribute="bottomMargin" secondItem="R1s-8m-OO3" secondAttribute="bottom" constant="21" id="pAq-EB-lQF"/>
                     <constraint firstItem="R1s-8m-OO3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="23" id="uDS-62-abE"/>
                 </constraints>

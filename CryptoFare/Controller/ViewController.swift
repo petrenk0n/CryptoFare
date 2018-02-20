@@ -33,6 +33,8 @@ class ViewController: UITableViewController {
         cell.cryptoName.text = cryptoArray[indexPath.row].name
         cell.cryptoAbbreviation.text = cryptoArray[indexPath.row].abbreviation
         cell.cryptoPrice.text = "$" + cryptoArray[indexPath.row].price
+        cell.cryptoImage.image = cryptoArray[indexPath.row].image
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -70,6 +72,7 @@ class ViewController: UITableViewController {
             currencyOne.name = "Bitcoin"
             currencyOne.abbreviation = "BTC"
             currencyOne.price = "\(bitcoinResult)"
+            currencyOne.image = UIImage(named: "bitcoin")
             cryptoArray.append(currencyOne)
         } else {
             print("error")
@@ -81,6 +84,7 @@ class ViewController: UITableViewController {
             currencyTwo.name = "Ether"
             currencyTwo.abbreviation = "ETH"
             currencyTwo.price = "\(etherResult)"
+            currencyTwo.image = UIImage(named: "ether")
             cryptoArray.append(currencyTwo)
         } else {
             print("error")
@@ -92,6 +96,7 @@ class ViewController: UITableViewController {
             currencyThree.name = "Litecoin"
             currencyThree.abbreviation = "LTC"
             currencyThree.price = "\(litecoinResult)"
+            currencyThree.image = UIImage(named: "litecoin")
             cryptoArray.append(currencyThree)
         } else {
             print("error")
@@ -103,6 +108,7 @@ class ViewController: UITableViewController {
             currencyFour.name = "Ripple"
             currencyFour.abbreviation = "XRP"
             currencyFour.price = "\(rippleResult)"
+            currencyFour.image = UIImage(named: "ripple")
             cryptoArray.append(currencyFour)
         } else {
             print("error")
@@ -114,6 +120,7 @@ class ViewController: UITableViewController {
             currencyFive.name = "Bitcoin Cash"
             currencyFive.abbreviation = "BCH"
             currencyFive.price = "\(bchResult)"
+            currencyFive.image = UIImage(named: "cash")
             cryptoArray.append(currencyFive)
         } else {
             print("error")
@@ -125,6 +132,7 @@ class ViewController: UITableViewController {
             currencySix.name = "Dash Coin"
             currencySix.abbreviation = "DASH"
             currencySix.price = "\(dashResult)"
+            currencySix.image = UIImage(named: "dash")
             cryptoArray.append(currencySix)
         } else {
             print("error")
@@ -136,6 +144,7 @@ class ViewController: UITableViewController {
             currencySeven.name = "Monero"
             currencySeven.abbreviation = "XMR"
             currencySeven.price = "\(bchResult)"
+            currencySeven.image = UIImage(named: "monero")
             cryptoArray.append(currencySeven)
         } else {
             print("error")
