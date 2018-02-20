@@ -13,7 +13,7 @@ import SwiftyJSON
 class ViewController: UITableViewController {
     
     var cryptoArray: [Currency] = [Currency]()
-    let baseURL = "https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,BCH,ETH,LTC,XRP&tsyms=USD"
+    let baseURL = "https://min-api.cryptocompare.com/data/pricemulti?fsyms=XMR,DASH,BTC,BCH,ETH,LTC,XRP&tsyms=USD"
     
     @IBOutlet var cryptoTableView: UITableView!
     
@@ -115,6 +115,28 @@ class ViewController: UITableViewController {
             currencyFive.abbreviation = "BCH"
             currencyFive.price = "\(bchResult)"
             cryptoArray.append(currencyFive)
+        } else {
+            print("error")
+        }
+        
+        if let dashResult = json["DASH"]["USD"].double {
+            print("Success")
+            let currencySix = Currency()
+            currencySix.name = "Dash Coin"
+            currencySix.abbreviation = "DASH"
+            currencySix.price = "\(dashResult)"
+            cryptoArray.append(currencySix)
+        } else {
+            print("error")
+        }
+        
+        if let bchResult = json["XMR"]["USD"].double {
+            print("Success")
+            let currencySeven = Currency()
+            currencySeven.name = "Monero"
+            currencySeven.abbreviation = "XMR"
+            currencySeven.price = "\(bchResult)"
+            cryptoArray.append(currencySeven)
         } else {
             print("error")
         }
